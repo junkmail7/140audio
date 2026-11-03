@@ -1,0 +1,32 @@
+{
+  "note": "More work coming soon — SoundCloud, Spotify and studio tracks to be added.",
+  "tracks": [
+    {
+      "title": "Live at Drop To Pop (Hardcore Fishbowl)",
+      "artist": "Primitive Man",
+      "url": "https://www.youtube.com/watch?v=4_C2TKkimzY",
+      "file": "",
+      "role": "Live session",
+      "year": "2026",
+      "featured": true
+    },
+    {
+      "title": "Live at Drop To Pop (Hardcore Fishbowl)",
+      "artist": "Ukko’s Hammer",
+      "url": "https://www.youtube.com/watch?v=hjXqycFTWSw",
+      "file": "",
+      "role": "Live session",
+      "year": "2026",
+      "featured": true
+    },
+    {
+      "title": "140 Audio LIVE",
+      "artist": "Disgustingest",
+      "url": "https://www.youtube.com/watch?v=xgMrWQqB39U",
+      "file": "",
+      "role": "Live session",
+      "year": "2026",
+      "featured": true
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "studio_name": "140 Audio",
+  "hero_line": "Recording · Mixing · Mastering · Live sessions",
+  "hero_image": "/media/hero.jpg",
+  "location": "",
+  "email": "",
+  "contact_form_key": "",
+  "youtube_channel_id": "UC2RaPLDZeYne3AsH2SBZ59w",
+  "services": [
+    {
+      "name": "Recording",
+      "description": "Full-band tracking, live-in-the-room or piece by piece.",
+      "icon": "mic"
+    },
+    {
+      "name": "Mixing",
+      "description": "Heavy without the mud. Your tracks or tracks from elsewhere.",
+      "icon": "faders"
+    },
+    {
+      "name": "Mastering",
+      "description": "Loud, clean and ready for streaming, vinyl or tape.",
+      "icon": "wave"
+    },
+    {
+      "name": "Live sessions",
+      "description": "Multi-cam live video and audio, filmed and mixed in house.",
+      "icon": "camera"
+    }
+  ],
+  "socials": [
+    {
+      "platform": "youtube",
+      "url": "https://www.youtube.com/@140Audio"
+    }
+  ]
+}

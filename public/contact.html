@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact — 140 Audio</title>
+<meta name="description" content="140 Audio — recording, mixing, mastering and live sessions for hardcore, screamo, metal, doom, emo, punk and beyond.">
+<meta property="og:title" content="Contact — 140 Audio">
+<meta property="og:description" content="140 Audio — recording, mixing, mastering and live sessions for hardcore, screamo, metal, doom, emo, punk and beyond.">
+<meta property="og:image" content="media/hero.jpg">
+<meta name="theme-color" content="#0e0e0e">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:wdth,wght@62..125,400..800&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+<script src="assets/app.js" defer></script>
+</head>
+<body data-page="contact">
+<header class="site-header">
+  <div class="wrap">
+    <a class="stamp" href="./" aria-label="140 Audio home"><b>140</b><i>Audio</i></a>
+    <nav class="nav" aria-label="Main">
+      <a href="work" data-page="work">Work</a>
+      <a href="bands" data-page="bands">Bands</a>
+      <a href="about" data-page="about">About</a>
+      <a href="contact" data-page="contact">Contact</a>
+    </nav>
+  </div>
+</header>
+<main>
+
+<div class="wrap">
+  <div class="page-head"><p class="kicker">Inquiries</p><h1>Contact</h1>
+    <p class="lede">Booking, rates, questions. The more you share about the project, the better the reply.</p></div>
+  <div class="contact">
+    <aside class="contact-aside"><dl id="contact-details"></dl></aside>
+    <form class="inquiry" id="inquiry" novalidate>
+      <input type="hidden" name="access_key" value="">
+      <input type="checkbox" name="botcheck" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+      <div class="field"><label for="f-name">Name <span class="req">*</span></label><input id="f-name" name="name" required autocomplete="name"></div>
+      <div class="field"><label for="f-email">Email <span class="req">*</span></label><input id="f-email" name="email" type="email" required autocomplete="email"></div>
+      <div class="field"><label for="f-project">Band / project</label><input id="f-project" name="project"></div>
+      <div class="field"><label for="f-service">What do you need?</label>
+        <select id="f-service" name="service">
+          <option>Recording</option><option>Mixing</option><option>Mastering</option>
+          <option>Recording + mix + master</option><option>Live session</option><option>Something else</option>
+        </select></div>
+      <div class="field"><label for="f-genre">Genre</label><input id="f-genre" name="genre" placeholder="Hardcore, doom, jazz…"></div>
+      <div class="field"><label for="f-when">Rough timing</label><input id="f-when" name="timing" placeholder="Next month, spring, ASAP…"></div>
+      <div class="field full"><label for="f-links">Links to your music</label><input id="f-links" name="links" placeholder="Bandcamp, Spotify, demos…"></div>
+      <div class="field full"><label for="f-msg">Tell me about it <span class="req">*</span></label><textarea id="f-msg" name="message" required placeholder="How many songs, how many members, what you're going for…"></textarea></div>
+      <div class="full"><button class="btn btn-primary" type="submit">Send inquiry</button></div>
+      <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+    </form>
+  </div>
+</div>
+</main>
+<footer class="site-footer"><div class="wrap"></div></footer>
+</body>
+</html>

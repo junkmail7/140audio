@@ -1,0 +1,119 @@
+# Pages CMS config — admin UI at https://app.pagescms.org
+# Only the files listed here are editable through the CMS. Code (HTML/CSS/JS) is not.
+media:
+  input: public/media
+  output: /media
+
+content:
+  - name: site
+    label: Site settings & socials
+    type: file
+    path: public/content/site.json
+    fields:
+      - { name: studio_name, label: Studio name, type: string, required: true }
+      - name: hero_line
+        label: Hero line
+        type: string
+        description: Small line under the big logo on the home page.
+      - name: hero_image
+        label: Hero photo
+        type: image
+        description: Background photo on the home page (shown black & white, darkened). Landscape, 1600px+ wide.
+      - { name: location, label: Location, type: string, description: "City / area. Leave blank to hide." }
+      - { name: email, label: Public email, type: string, description: Shown on the contact page and footer. }
+      - name: contact_form_key
+        label: Web3Forms access key
+        type: string
+        description: "Get one free at web3forms.com (enter the inbox that should receive inquiries). Blank = form disabled."
+      - name: youtube_channel_id
+        label: YouTube channel ID
+        type: string
+        description: "Starts with UC. Powers the 'On the channel' section. Blank = hidden."
+      - name: services
+        label: Services
+        type: object
+        list: true
+        fields:
+          - { name: name, label: Name, type: string, required: true }
+          - { name: description, label: Description, type: text }
+          - name: icon
+            label: Icon
+            type: select
+            options:
+              values: [mic, faders, wave, camera, amp]
+      - name: socials
+        label: Social links
+        type: object
+        list: true
+        fields:
+          - name: platform
+            label: Platform
+            type: select
+            options:
+              values: [youtube, instagram, tiktok, facebook, x, threads, bluesky, bandcamp, soundcloud, spotify, website]
+          - { name: url, label: URL, type: string, required: true }
+
+  - name: tracks
+    label: Work / portfolio
+    type: file
+    path: public/content/tracks.json
+    fields:
+      - name: note
+        label: WIP note
+        type: string
+        description: Shows a WIP banner at the top of the Work page. Clear it when the page is done.
+      - name: tracks
+        label: Tracks & videos
+        type: object
+        list: true
+        fields:
+          - { name: title, label: Title, type: string, required: true }
+          - { name: artist, label: Artist / band, type: string }
+          - name: url
+            label: Link (YouTube, Spotify, SoundCloud, Bandcamp)
+            type: string
+            description: Paste the normal share link. Leave blank if uploading a file instead.
+          - name: file
+            label: Or upload audio/video
+            type: file
+            description: "MP3 recommended (keep under ~20MB). Used instead of the link if set."
+            options:
+              categories: [audio, video]
+          - { name: role, label: Role, type: string, description: "e.g. Recorded, Mixed, Mastered, Live session" }
+          - { name: genre, label: Genre, type: string }
+          - { name: year, label: Year, type: string }
+          - { name: featured, label: Feature on home page, type: boolean }
+
+  - name: bands
+    label: Bands
+    type: file
+    path: public/content/bands.json
+    fields:
+      - name: note
+        label: WIP note
+        type: string
+        description: Shows a WIP banner at the top of the Bands page. Clear it when the list is done.
+      - name: bands
+        label: Bands
+        type: object
+        list: true
+        fields:
+          - { name: name, label: Band name, type: string, required: true }
+          - { name: genre, label: Genre, type: string }
+          - { name: year, label: Year, type: string }
+          - { name: role, label: What you did, type: string, description: "e.g. Recorded & mixed LP" }
+          - { name: url, label: Band link, type: string, description: Bandcamp, Instagram, site… }
+          - name: embed_url
+            label: Work to embed
+            type: string
+            description: YouTube / Spotify / SoundCloud link, or an uploaded file path.
+          - { name: show_work, label: Show embedded work, type: boolean }
+
+  - name: about
+    label: About page
+    type: file
+    path: public/content/about.json
+    fields:
+      - { name: heading, label: Heading, type: string }
+      - { name: body, label: Body, type: text, description: Blank line between paragraphs. }
+      - { name: photo, label: Photo, type: image }

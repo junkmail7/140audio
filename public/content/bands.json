@@ -1,0 +1,32 @@
+{
+  "note": "Full list of bands in progress.",
+  "bands": [
+    {
+      "name": "Primitive Man",
+      "genre": "",
+      "year": "2026",
+      "role": "Live session",
+      "url": "",
+      "embed_url": "https://www.youtube.com/watch?v=4_C2TKkimzY",
+      "show_work": true
+    },
+    {
+      "name": "Ukko’s Hammer",
+      "genre": "",
+      "year": "2026",
+      "role": "Live session",
+      "url": "",
+      "embed_url": "https://www.youtube.com/watch?v=hjXqycFTWSw",
+      "show_work": true
+    },
+    {
+      "name": "Disgustingest",
+      "genre": "",
+      "year": "2026",
+      "role": "Live session",
+      "url": "",
+      "embed_url": "https://www.youtube.com/watch?v=xgMrWQqB39U",
+      "show_work": true
+    }
+  ]
+}
